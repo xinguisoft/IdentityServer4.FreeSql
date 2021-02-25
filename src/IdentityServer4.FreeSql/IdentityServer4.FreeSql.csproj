@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/xinguisoft/IdentityServer4.FreeSql.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>10635672.png</PackageIcon>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
