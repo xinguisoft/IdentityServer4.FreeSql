@@ -25,14 +25,14 @@ namespace IdentityServer4.FreeSql.MSSqlTest
             var freeSqlC = new FreeSqlBuilder()
                 .UseConnectionString(DataType.SqlServer, connectionString)
                 .UseAutoSyncStructure(true)
-                //.UseNoneCommandParameter(true)
+                .UseNoneCommandParameter(true)
                 .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
                 .Build<ConfigurationDbContext>();
 
             var freeSqlO = new FreeSqlBuilder()
                 .UseConnectionString(DataType.SqlServer, connectionString)
                 .UseAutoSyncStructure(true)
-                //.UseNoneCommandParameter(true)
+                .UseNoneCommandParameter(true)
                 .UseMonitorCommand(cmd => Trace.WriteLine(cmd.CommandText))
                 .Build<PersistedGrantDbContext>();
 

@@ -47,16 +47,16 @@ namespace IdentityServer4.FreeSql.Stores
             var client = (await baseQuery.ToListAsync())
                 .SingleOrDefault(x => x.ClientId == clientId);
             if (client == null) return null;
-
-            await baseQuery.Include(x => x.AllowedCorsOrigins).IncludeMany(c => c.AllowedCorsOrigins).ToListAsync();
-            await baseQuery.Include(x => x.AllowedGrantTypes).IncludeMany(c => c.AllowedGrantTypes).ToListAsync();
-            await baseQuery.Include(x => x.AllowedScopes).IncludeMany(c => c.AllowedScopes).ToListAsync();
-            await baseQuery.Include(x => x.Claims).IncludeMany(c => c.Claims).ToListAsync();
-            await baseQuery.Include(x => x.ClientSecrets).IncludeMany(c => c.ClientSecrets).ToListAsync();
-            await baseQuery.Include(x => x.IdentityProviderRestrictions).IncludeMany(c => c.IdentityProviderRestrictions).ToListAsync();
-            await baseQuery.Include(x => x.PostLogoutRedirectUris).IncludeMany(c => c.PostLogoutRedirectUris).ToListAsync();
-            await baseQuery.Include(x => x.Properties).IncludeMany(c => c.Properties).ToListAsync();
-            await baseQuery.Include(x => x.RedirectUris).IncludeMany(c => c.RedirectUris).ToListAsync();
+           
+            await baseQuery.IncludeMany(x => x.AllowedCorsOrigins).ToListAsync();
+            await baseQuery.IncludeMany(x => x.AllowedGrantTypes).ToListAsync();
+            await baseQuery.IncludeMany(x => x.AllowedScopes).ToListAsync();
+            await baseQuery.IncludeMany(x => x.Claims).ToListAsync();
+            await baseQuery.IncludeMany(x => x.ClientSecrets).ToListAsync();
+            await baseQuery.IncludeMany(x => x.IdentityProviderRestrictions).ToListAsync();
+            await baseQuery.IncludeMany(x => x.PostLogoutRedirectUris).ToListAsync();
+            await baseQuery.IncludeMany(x => x.Properties).ToListAsync();
+            await baseQuery.IncludeMany(x => x.RedirectUris).ToListAsync();
 
             var model = client.ToModel();
 
