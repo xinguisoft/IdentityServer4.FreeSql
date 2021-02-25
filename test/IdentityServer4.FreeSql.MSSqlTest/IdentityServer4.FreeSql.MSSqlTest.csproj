@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FreeSql" Version="2.3.100" />
+		<PackageReference Include="FreeSql.Provider.SqlServer" Version="2.3.100" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\IdentityServer4.FreeSql\IdentityServer4.FreeSql.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.FreeSql", "src\IdentityServer4.FreeSql\IdentityServer4.FreeSql.csproj", "{95B6EBF7-2AE3-4B7F-868E-919C9691B637}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C58BB941-191C-4A63-A20F-BA7126CA4C7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{27400385-3091-4654-936F-C26CB0E3FAFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.FreeSql.Test", "test\IdentityServer4.FreeSql.Test\IdentityServer4.FreeSql.Test.csproj", "{47142C93-9820-491C-BDFE-BF95FDB70E6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.FreeSql.IntegrationTest", "test\IdentityServer4.FreeSql.IntegrationTest\IdentityServer4.FreeSql.IntegrationTest.csproj", "{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.FreeSql.MSSqlTest", "test\IdentityServer4.FreeSql.MSSqlTest\IdentityServer4.FreeSql.MSSqlTest.csproj", "{6C241AEB-73E3-4FB2-88C3-371BA431C036}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95B6EBF7-2AE3-4B7F-868E-919C9691B637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B6EBF7-2AE3-4B7F-868E-919C9691B637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B6EBF7-2AE3-4B7F-868E-919C9691B637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B6EBF7-2AE3-4B7F-868E-919C9691B637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47142C93-9820-491C-BDFE-BF95FDB70E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47142C93-9820-491C-BDFE-BF95FDB70E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47142C93-9820-491C-BDFE-BF95FDB70E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47142C93-9820-491C-BDFE-BF95FDB70E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C241AEB-73E3-4FB2-88C3-371BA431C036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C241AEB-73E3-4FB2-88C3-371BA431C036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C241AEB-73E3-4FB2-88C3-371BA431C036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C241AEB-73E3-4FB2-88C3-371BA431C036}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95B6EBF7-2AE3-4B7F-868E-919C9691B637} = {C58BB941-191C-4A63-A20F-BA7126CA4C7B}
+		{47142C93-9820-491C-BDFE-BF95FDB70E6A} = {27400385-3091-4654-936F-C26CB0E3FAFD}
+		{E2FBF4D3-5565-4B62-A290-D3FEE9B6C200} = {27400385-3091-4654-936F-C26CB0E3FAFD}
+		{6C241AEB-73E3-4FB2-88C3-371BA431C036} = {27400385-3091-4654-936F-C26CB0E3FAFD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB50898E-DA1E-462F-A597-9C7CCE0B55D4}
+	EndGlobalSection
+EndGlobal

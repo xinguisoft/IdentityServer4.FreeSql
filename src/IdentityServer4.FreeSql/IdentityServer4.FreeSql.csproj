@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>XinGuiSoft.IdentityServer4.FreeSql</PackageId>
+    <Company>XinGuiSoft</Company>
+    <Authors>sunrise</Authors>
+    <Description>FreeSql persistence layer for IdentityServer4</Description>
+    <PackageProjectUrl>https://github.com/xinguisoft/IdentityServer4.FreeSql.git</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xinguisoft/IdentityServer4.FreeSql.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>10635672.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FreeSql.DbContext" Version="2.3.100" />
+    <PackageReference Include="IdentityServer4" Version="4.1.1" />
+    <PackageReference Include="IdentityServer4.Storage" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+	
+  <ItemGroup>
+    <None Include="10635672.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="10635672.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="10635672.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
