@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-//using IdentityServer4.FreeSql;
 
 namespace IdentityServer4.FreeSql.MSSqlTest
 {
