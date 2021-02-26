@@ -86,18 +86,9 @@ namespace IdentityServer4.FreeSql.Stores
 
             var query =
                 from api in Context.ApiResources
-                where api.Scopes.Where(x => names.Contains(x.Scope)).Any()
+                where api.Scopes.AsSelect().Where(x => names.Contains(x.Scope)).Any()
                 select api;
 
-            /*
-            var apis = query
-                .Include(x => x.Secrets)
-                .Include(x => x.Scopes)
-                    .ThenInclude(s => s.UserClaims)
-                .Include(x => x.UserClaims)
-                .Include(x => x.Properties)
-                .AsNoTracking();
-            */
             var apis = query
                 .IncludeMany(x => x.Secrets)
                 .IncludeMany(x => x.Scopes)
@@ -130,8 +121,8 @@ namespace IdentityServer4.FreeSql.Stores
                 select identityResource;
 
             var resources = query
-                .Include(x => x.UserClaims)
-                .Include(x => x.Properties)
+                .IncludeMany(x => x.UserClaims)
+                .IncludeMany(x => x.Properties)
                 .NoTracking();
 
             var results = (await resources.ToListAsync())
@@ -158,8 +149,8 @@ namespace IdentityServer4.FreeSql.Stores
                 select scope;
 
             var resources = query
-                .Include(x => x.UserClaims)
-                .Include(x => x.Properties)
+                .IncludeMany(x => x.UserClaims)
+                .IncludeMany(x => x.Properties)
                 .NoTracking();
 
             var results = (await resources.ToListAsync())
